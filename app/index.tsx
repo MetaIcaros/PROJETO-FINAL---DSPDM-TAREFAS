@@ -8,8 +8,8 @@ import {
   View,
 } from 'react-native';
 
-import TaskItem from './components/TaskItem';
-import { Task } from './types/task';
+import TaskItem from '../components/TaskItem';
+import { Task } from '../types/task';
 
 export default function HomeScreen() {
   const [tasks, setTasks] = useState<Task[]>([]);
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#f3f4f6',
-    paddingTop: 50,
+    paddingTop: 60,
     paddingHorizontal: 16,
   },
   header: {
